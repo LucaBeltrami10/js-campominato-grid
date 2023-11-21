@@ -35,6 +35,10 @@ playButton.addEventListener('click', function(){
         let newSquare = createDivSquare()
         squareContainer.appendChild(newSquare);
         newSquare.innerHTML = i + 1
+        newSquare.addEventListener('click', function(){
+            newSquare.classList.toggle('bc-lightblue')
+            console.log(i + 1)
+        })
     }
 });
 
