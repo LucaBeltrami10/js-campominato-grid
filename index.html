@@ -12,7 +12,15 @@
 <body>
     <header class="my_container container-fluid d-flex justify-content-between align-items-center py-4">
         <h1 class="fs-1">Campo Minato</h1>
-        <button id="play-button" type="button" class="btn btn-primary">Play</button>
+        <div class="d-flex">
+            <select id="difficulty" class="form-select me-4" aria-label="Default select example">
+                <option selected>Seleziona la Difficoltà</option>
+                <option value="1">Facile</option>
+                <option value="2">Medio</option>
+                <option value="3">Difficile</option>
+              </select>
+            <button id="play-button" type="button" class="btn btn-primary">Play</button>
+        </div>
     </header>
     <main class="my_container container-fluid bc-lightgreen py-5">
         <div id="squares-container" class="d-flex flex-wrap mx-auto">
