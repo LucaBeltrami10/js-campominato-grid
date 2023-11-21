@@ -28,11 +28,11 @@ console.log(squareContainer)
 
 /* per bonus. da completare alla fine */
 
-let squareNumber = 100
-
 playButton.addEventListener('click', function(){
     const difficultyLevel =  document.getElementById('difficulty').value
     console.log(difficultyLevel)
+    let squareNumber = difficultyLevel * difficultyLevel
+    let a
 
     for (let i = 0; i < squareNumber; i++){
         let newSquare = createDivSquare(difficultyLevel)
@@ -60,3 +60,9 @@ function createDivSquare(nColumn){
     divSquare.style.height = `calc(100% / ${nColumn})`
     return divSquare;
 };
+
+function removeChild(parent){
+    while (parent.firstChild){
+        parent.removeChild(parent.firstChild)
+    }
+}
