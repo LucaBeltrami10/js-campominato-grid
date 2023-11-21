@@ -4,3 +4,14 @@
     box-sizing: border-box;
 }
 
+.bc-lightgreen{
+    background-color: #7fffd4;
+}
+
+.bc-lighblue{
+    background-color: lightskyblue;
+}
+
+.my_container{
+    max-width: 800px;
+}

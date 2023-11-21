@@ -15,5 +15,6 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  *          = classlist.add(classe css colore)
  *          = console.log(THIS)(index ciclo usato per aggiungere contenuto)  (prova THIS, teoricamente dovrebbe essere il soggetto del listener. verrà stampato il tag o il contenuto? penso il tag)
  *
- *  
  */
+
+
