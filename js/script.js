@@ -17,8 +17,15 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  *
  */
 
-const playButton = document.getElementById('play-button')
+const playButton = document.getElementById('play-button');
 
 playButton.addEventListener('click', function(){
-    
-})
+
+});
+
+
+/* FUNZIONI */
+function createDivSquare(){
+    const divSquare = document.createElement('div');
+    return divSquare
+};
