@@ -23,13 +23,14 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  */
 
 const playButton = document.getElementById('play-button');
+const squareContainer = document.getElementById('square-container')
 
 /* per bonus. da completare alla fine */
 let squareNumber = 100
 
 playButton.addEventListener('click', function(){
     for (let i = 0; i < squareNumber; i++){
-        
+
     }
 });
 
