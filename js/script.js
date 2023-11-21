@@ -27,12 +27,15 @@ const squareContainer = document.getElementById('squares-container');
 console.log(squareContainer)
 
 /* per bonus. da completare alla fine */
+
 let squareNumber = 100
 
 playButton.addEventListener('click', function(){
-    
+    const difficultyLevel =  document.getElementById('difficulty').value
+    console.log(difficultyLevel)
+
     for (let i = 0; i < squareNumber; i++){
-        let newSquare = createDivSquare()
+        let newSquare = createDivSquare(difficultyLevel)
         squareContainer.appendChild(newSquare);
         newSquare.innerHTML = i + 1
         newSquare.addEventListener('click', function(){
@@ -50,8 +53,10 @@ playButton.addEventListener('click', function(){
  * @param {*} numOfColumn // numero di quadrati su una singola colonna o riga
  * @returns 
  */
-function createDivSquare(){
+function createDivSquare(nColumn){
     const divSquare = document.createElement('div');
-    divSquare.classList.add('my_square') ;
+    divSquare.classList.add('my_square');
+    divSquare.style.width = `calc(100% / ${nColumn})`
+    divSquare.style.height = `calc(100% / ${nColumn})`
     return divSquare;
 };
