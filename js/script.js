@@ -32,7 +32,7 @@ playButton.addEventListener('click', function(){
     const difficultyLevel =  document.getElementById('difficulty').value
     console.log(difficultyLevel)
     let squareNumber = difficultyLevel * difficultyLevel
-    let a
+    removeChild(squareContainer)
 
     for (let i = 0; i < squareNumber; i++){
         let newSquare = createDivSquare(difficultyLevel)
@@ -61,6 +61,8 @@ function createDivSquare(nColumn){
     return divSquare;
 };
 
+
+/* funzione con spunto preso da internet */
 function removeChild(parent){
     while (parent.firstChild){
         parent.removeChild(parent.firstChild)
