@@ -17,4 +17,4 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  *
  */
 
-
+const playButton = document.getElementById('play-button')
