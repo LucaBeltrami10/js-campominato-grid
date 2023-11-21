@@ -40,8 +40,14 @@ playButton.addEventListener('click', function(){
 
 
 /* FUNZIONI */
+
+/**
+ * 
+ * @param {*} numOfColumn // numero di quadrati su una singola colonna o riga
+ * @returns 
+ */
 function createDivSquare(){
     const divSquare = document.createElement('div');
-    divSquare.classList.add('my_square')
-    return divSquare
+    divSquare.classList.add('my_square') ;
+    return divSquare;
 };
