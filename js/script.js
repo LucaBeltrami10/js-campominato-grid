@@ -11,10 +11,15 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  *      -> aggiungere il quadrato (ELEMENT) generato alla graglia un numero X di volte (bonus. inizialmente 100)
  *      -> aggiungi contenuto (num da 1 a 100, usa index del ciclo)
  *      -> aggiungi classi css
- *      -> addEventListener su ELEMENT. al click
+ *      -> 3)addEventListener su ELEMENT. al click
  *          = classlist.add(classe css colore)
  *          = console.log(THIS)(index ciclo usato per aggiungere contenuto)  (prova THIS, teoricamente dovrebbe essere il soggetto del listener. verrà stampato il tag o il contenuto? penso il tag)
  *
+    * secondo modo per aggiungere event listener DA TESTARE. FUORI DAL CICLO FOR:
+    * 3))seleziono con quatyselectorAll ogni quadrato (ELEMENT)
+    *      -> AGGIUNGO a tutti gli elementi selezionati EventListener. al click:
+    *          -> .classlist.toggle(classe css.colore)aggiungo listener su ELEMENTO
+    *          -> console.log
  */
 
 const playButton = document.getElementById('play-button');
@@ -23,7 +28,9 @@ const playButton = document.getElementById('play-button');
 let squareNumber = 100
 
 playButton.addEventListener('click', function(){
-    for (let i = 0; i < squareNumber; i++)
+    for (let i = 0; i < squareNumber; i++){
+        
+    }
 });
 
 
