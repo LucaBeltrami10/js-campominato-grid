@@ -6,8 +6,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 /**
  * 1)seleziono bottone in doom
  * 2)eventlistener su bottone. al click:
- *  -> FUNZIONE DI GENERAZIONE QUADRATI - genero un quadrato. return un ELEMENT
  *  -> CICLO FOR: 
+ *      ->FUNZIONE DI GENERAZIONE QUADRATI - genero un quadrato. return un ELEMENT
  *      -> aggiungere il quadrato (ELEMENT) generato alla graglia un numero X di volte (bonus. inizialmente 100)
  *      -> aggiungi contenuto (num da 1 a 100, usa index del ciclo)
  *      -> aggiungi classi css
@@ -23,14 +23,18 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
  */
 
 const playButton = document.getElementById('play-button');
-const squareContainer = document.getElementById('square-container')
+const squareContainer = document.getElementById('squares-container');
+console.log(squareContainer)
 
 /* per bonus. da completare alla fine */
 let squareNumber = 100
 
 playButton.addEventListener('click', function(){
+    
     for (let i = 0; i < squareNumber; i++){
-
+        let newSquare = createDivSquare()
+        squareContainer.appendChild(newSquare);
+        newSquare.innerHTML = i + 1
     }
 });
 
@@ -38,5 +42,6 @@ playButton.addEventListener('click', function(){
 /* FUNZIONI */
 function createDivSquare(){
     const divSquare = document.createElement('div');
+    divSquare.classList.add('my_square')
     return divSquare
 };
